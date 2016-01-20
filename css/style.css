@@ -1,0 +1,125 @@
+
+
+/* lesson 6  */
+
+
+
+/* border-box provides better responsive behaviour  */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* lesson 3 CSS  */
+
+
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.masthead-heading,
+.masthead-intro,
+.footer-section {
+  text-align: center; 
+}
+
+.masthead {
+  padding: 6em 0;
+  background-repeat: no-repeat;
+  background-image: url('http://i68.tinypic.com/aaw1s7.jpg');
+  background-size: cover;
+  border-top: solid 1em #FFCF33;
+  border-bottom: solid 1em #FFCF33;
+  border-left: solid 1em #FFCF33;
+  border-right: solid 1em #FFCF33;
+}
+
+.masthead-intro {
+  margin-bottom: 0.1em;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 2em;
+}
+
+.masthead-heading {
+  margin-top: -0.2em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  color: #100082;
+  text-shadow: 0px 3px 0px #FFCF33;
+}
+
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+ 
+}
+
+
+
+
+.introduction-section,
+.more-about-me-section{
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+   /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.footer-section{
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: auto;
+}
+
+.footer-section > p {
+  color: blue; 
+  /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.social {
+	padding-left: 0em;
+}
+
+.social > li {
+    display: inline-block;
+  /* Typography Declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: .5em;
+}
+
+@media only screen and (max-width: 500px) {
+	.introduction-section,
+	.more-about-me-section,
+	.footer-section > p {
+        padding:  .5em  0;
+        font-size: 1em;
+        margin: 1em  1em;
+    	}
+
+	.social > li {
+        padding: .5em 0;
+        font-size: 1em;
+    	}
+	}
